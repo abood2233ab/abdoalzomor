@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: monospace;
+  color: #00ff00;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* تأثير إضاءة نيون مرعب */
+.glow {
+  text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 60px #ff0000, 0 0 90px #ff0000;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+}
+
+.avatar-container {
+  display: inline-block;
+  padding: 5px;
+  border: 3px solid #00ff00;
+  border-radius: 15px;
+  box-shadow: 0 0 25px #00ff00, 0 0 50px #ff0000;
+  transition: 0.5s;
+}
+
+.avatar-container:hover {
+  box-shadow: 0 0 80px #ff0000, 0 0 120px #00ff00, 0 0 150px #ff0000;
+  transform: scale(1.1);
+}
+
+.avatar {
+  width: 260px;
+  height: auto;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.avatar-container:hover .avatar {
+  filter: brightness(1.5) drop-shadow(0 0 35px #ff0000);
+}
+
+.box {
+  margin-top: 30px;
+  padding: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #00ff00;
+  border-radius: 12px;
+  background: rgba(0,255,0,0.05);
+}
+
+/* زر الصوت */
+button {
+  padding: 10px 20px;
+  border: 1px solid #00ff00;
+  background: transparent;
+  color: #00ff00;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgba(255,0,0,0.2);
+}
